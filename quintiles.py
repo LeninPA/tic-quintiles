@@ -55,6 +55,6 @@ lastqt = df.loc[(df['AÑO'] == year) & \
                (df['ENTIDAD'] == entidad) & \
                (df['EDAD'] >= 100), \
                'POBLACION'].sum()
-qt.append(lastqt)
 print(f"Mexico's total population in the year {year} is {total} people")
-print(qt)
+for elem in qt:
+    print(int(elem))
